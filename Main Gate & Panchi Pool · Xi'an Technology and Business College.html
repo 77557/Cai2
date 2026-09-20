@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/32546/Desktop/Code_20260920110231(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main Gate &amp; Panchi Pool · Xi'an Technology and Business College</title>
+<style>
+  :root{
+    --main:#0a4c8a;
+    --main-dark:#06325c;
+    --accent:#c8a24a;
+    --bg:#f6f4ef;
+    --ink:#2b2b2b;
+    --muted:#6d6d6d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.9;
+  }
+  .hero{
+    position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;
+    background:linear-gradient(135deg,rgba(6,50,92,.85),rgba(10,76,138,.6)),radial-gradient(circle at 30% 20%,#1d6fb8 0%,transparent 55%),linear-gradient(180deg,#0a4c8a,#06325c);
+    color:#fff;
+  }
+  .hero::before{content:"泮";position:absolute;font-size:40vw;font-weight:900;color:rgba(255,255,255,.04);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+  .hero-inner{position:relative;padding:0 24px;animation:fadeUp 1.2s ease;}
+  .hero h1{font-size:clamp(2rem,6vw,4.2rem);letter-spacing:.15em;font-weight:800;}
+  .hero .sub{margin-top:18px;font-size:clamp(1rem,2.5vw,1.4rem);letter-spacing:.3em;color:var(--accent);}
+  .hero .en{margin-top:26px;font-size:.95rem;letter-spacing:.2em;color:rgba(255,255,255,.7);}
+
+  /* 双语行：英文在上，中文在下 */
+  .bien{display:block;}
+  .bizh{
+    display:block;
+    font-size:.85em;
+    color:var(--muted);
+    line-height:1.7;
+    margin-top:2px;
+  }
+
+  section{padding:80px 24px;max-width:1080px;margin:0 auto;}
+  .section-title{text-align:center;margin-bottom:52px;}
+  .section-title h2{font-size:clamp(1.6rem,4vw,2.6rem);color:var(--main-dark);letter-spacing:.08em;position:relative;display:inline-block;padding-bottom:16px;}
+  .section-title h2::after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:60px;height:3px;background:var(--accent);border-radius:2px;}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+  .card{
+    background:#fff;border-radius:16px;padding:36px 30px;
+    box-shadow:0 6px 24px rgba(6,50,92,.08);transition:transform .3s,box-shadow .3s;border-top:4px solid var(--accent);
+  }
+  .card:hover{transform:translateY(-8px);box-shadow:0 16px 40px rgba(6,50,92,.16);}
+  .card .ico{font-size:2.2rem;margin-bottom:16px;}
+  .card h3{color:var(--main-dark);margin-bottom:12px;font-size:1.3rem;}
+  .card h3 .bizh{font-size:.78em;font-weight:400;}
+
+  .story{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+  .story-img{
+    border-radius:20px;overflow:hidden;position:relative;aspect-ratio:4/3;
+    background:linear-gradient(135deg,#0a4c8a,#1d8fbe);display:flex;align-items:center;justify-content:center;
+  }
+  .story-img .deco{font-size:5rem;color:rgba(255,255,255,.9);}
+  .story-img .tag{position:absolute;bottom:16px;left:16px;color:#fff;background:rgba(0,0,0,.25);padding:4px 14px;border-radius:20px;font-size:.85rem;}
+  .story-text h3{color:var(--main-dark);font-size:1.6rem;margin-bottom:18px;}
+  .story-text p{color:#4a4a4a;margin-bottom:16px;}
+  .story-text .quote{border-left:4px solid var(--accent);padding:12px 18px;background:#fff8e8;color:var(--main-dark);font-style:italic;border-radius:0 8px 8px 0;}
+
+  .panchi{background:linear-gradient(180deg,#fff,#f0f5fa);border-radius:24px;padding:48px 36px;}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:8px;}
+  .feature{background:#fff;border-radius:14px;padding:26px 22px;text-align:center;box-shadow:0 4px 16px rgba(6,50,92,.06);transition:transform .3s;}
+  .feature:hover{transform:scale(1.04);}
+  .feature .em{font-size:2rem;display:block;margin-bottom:10px;}
+  .feature h4{color:var(--main-dark);margin-bottom:8px;}
+  .feature h4 .bizh{font-weight:400;font-size:.78em;}
+
+  .info-table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 24px rgba(6,50,92,.08);}
+  .info-table th,.info-table td{padding:16px 20px;text-align:left;border-bottom:1px solid #eef1f5;}
+  .info-table th{background:var(--main-dark);color:#fff;font-weight:600;letter-spacing:.05em;width:28%;}
+  .info-table tr:last-child th,.info-table tr:last-child td{border-bottom:none;}
+
+  .closing{text-align:center;background:linear-gradient(135deg,#06325c,#0a4c8a);color:#fff;border-radius:24px;padding:60px 30px;margin:40px auto 0;}
+  .closing h3{font-size:clamp(1.4rem,3.5vw,2.2rem);letter-spacing:.1em;margin-bottom:18px;}
+
+  footer{text-align:center;padding:36px 24px;color:var(--muted);font-size:.88rem;}
+
+  @keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+  @media(max-width:760px){section{padding:56px 18px;}.story{grid-template-columns:1fr;gap:30px;}.info-table th{width:35%;}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1>Main Gate &amp; Panchi Pool</h1>
+    <span class="bizh" style="display:block;font-size:1.1rem;color:rgba(255,255,255,.85);letter-spacing:.3em;margin-top:12px;">正门与泮池</span>
+    <div class="sub">The First View Upon Entering Campus</div>
+    <span class="bizh" style="display:block;color:rgba(255,255,255,.7);margin-top:4px;">西安工商学院 · 入校第一眼风景</span>
+    <div class="en">XI'AN TECHNOLOGY AND BUSINESS COLLEGE</div>
+  </div>
+</header>
+
+<section>
+  <div class="section-title">
+    <h2>A Glimpse Through Time · A Pool of Jade</h2>
+    <span class="bizh">一眼千年 · 一方碧水</span>
+    <p class="bien" style="text-align:center;margin-top:14px;">Pass through the main gate, let Panchi be your prologue, and the library awaits on the central axis.</p>
+    <span class="bizh" style="text-align:center;display:block;">从正门而入，泮池为序，图书馆在中轴线上迎你而来</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="ico">🏛️</div>
+      <h3>The Grand Main Gate<span class="bizh">庄重大气的正门</span></h3>
+      <p class="bien">Facing Panchi Square, the main gate is where freshmen register and visitors get their first impression. Its stately portico aligns perfectly with the library on the central axis—majestic and open.</p>
+      <span class="bizh">学校正门坐落于泮池广场前，是新生报到的主大门，也是每一位访客入校的第一印象。门廊方正开阔，与中轴线上的图书馆遥相呼应，气势恢宏。</span>
+    </div>
+    <div class="card">
+      <div class="ico">💧</div>
+      <h3>The Mirror-like Panchi Pool<span class="bizh">澄澈如镜的泮池</span></h3>
+      <p class="bien">The very first scene that greets you. Crystal water mirrors the sky, clouds, and surrounding buildings. Black swans glide low; koi flick their tails, sending ripples across the surface.</p>
+      <span class="bizh">入校第一眼的风景。池水清冽，映着天光云影，也映着岸边建筑的轮廓。黑天鹅低首游过，锦鲤摆尾，漾开圈圈涟漪。</span>
+    </div>
+    <div class="card">
+      <div class="ico">🌿</div>
+      <h3>A Leisurely Humanistic Vibe<span class="bizh">悠然的人文气息</span></h3>
+      <p class="bien">Tree-lined paths and rocking chairs invite you to rest. A short sit between classes, a breeze to wash off fatigue—also a perfect spot for strolls, photos, opening ceremonies, and campus events.</p>
+      <span class="bizh">道路两旁绿树成荫，摇篮椅供人休憩。下课间隙小坐片刻，吹风消解疲惫；也是散步拍照、举办开学典礼与校园活动的绝佳点位。</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h2>Main Gate · The Demeanor of a Seat of Learning</h2>
+    <span class="bizh">正门 · 学府气度</span>
+    <p class="bien" style="text-align:center;margin-top:14px;">Square and spacious, welcoming students from all directions.</p>
+    <span class="bizh" style="text-align:center;display:block;">方正开阔，礼迎四方学子</span>
+  </div>
+  <div class="story">
+    <div class="story-img">
+      <span class="deco">🚪</span>
+      <span class="tag">Panchi Sq. · Main Registration Gate<br><span style="font-size:.8em;opacity:.85;">泮池广场前 · 新生报到主大门</span></span>
+    </div>
+    <div class="story-text">
+      <h3>The First Sight of Campus<span class="bizh">入校的第一道风景</span></h3>
+      <p class="bien">Xi'an Technology and Business College is located at No. 1235 Luxiang Road, Gaoling District. The main gate faces Panchi Square—open and stately. Straight ahead, the library stands on the central axis, its scholarly aura palpable at first glance.</p>
+      <span class="bizh">西安工商学院位于西安市高陵区鹿祥路1235号。学校正门面向泮池广场，门庭开阔、庄重大气，一眼望去，图书馆正对校门伫立在中轴线上，书香之气扑面而来。</span>
+      <p class="bien" style="margin-top:12px;">This is the primary entrance for each freshman cohort and the stage for opening ceremonies and major events. Step out, and you're on the way to Zhaohui Square Metro; step in, and you enter a world of learning and dreams.</p>
+      <span class="bizh">这里是每一届新生报到的主大门，也是开学典礼、校园活动的重要场所。走出正门，是通往昭慧广场地铁站的便捷之路；走进正门，便是一方求知逐梦的天地。</span>
+      <div class="quote" style="margin-top:16px;">
+        <span class="bien" style="font-style:italic;">"Rocking chairs sway by the pool; passersby stroll unhurried. Now and then, a koi flicks its tail."</span><br>
+        <span class="bizh" style="display:block;margin-top:6px;">"池边摇椅悠悠，行人缓缓；池中偶有锦鲤摆尾。"</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h2>Panchi Pool · Gentle Waters</h2>
+    <span class="bizh">泮池 · 碧水温婉</span>
+    <p class="bien" style="text-align:center;margin-top:14px;">Learning knows no bounds, as Panchi's waters ever flow.</p>
+    <span class="bizh" style="text-align:center;display:block;">学无止境，泮水长流</span>
+  </div>
+  <div class="panchi">
+    <div style="max-width:720px;margin:0 auto 36px;">
+      <p class="bien" style="text-align:center;">Like a still mirror, Panchi rests quietly in a corner of campus. It is the first landscape after entry, and the most poetic waterscape at XTBC. Crabapple blossoms, rocking chairs, and lounging students blend water, architecture, and spring into something tender and unhurried.</p>
+      <span class="bizh" style="text-align:center;display:block;margin-top:8px;">泮池如镜，静静卧在校园一隅。它是入校后第一眼的风景，也是西工商最具人文情致的一方水域。岸边的海棠、摇椅与闲坐的学子，让池水、建筑与春景相融，温柔而闲适。</span>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <span class="em">🦢</span>
+        <h4>Black Swans<span class="bizh">黑天鹅戏水</span></h4>
+        <p class="bien">Black swans grace the pool, adding a touch of elegance as they glide with quiet grace.</p>
+        <span class="bizh">泮池中放养黑天鹅，为校园添上别样的灵动美景，低头游过，静谧悠然。</span>
+      </div>
+      <div class="feature">
+        <span class="em">🐟</span>
+        <h4>Koi Swimming<span class="bizh">锦鲤游弋</span></h4>
+        <p class="bien">Koi flick their tails, sending ripples outward—legend says they bring good fortune.</p>
+        <span class="bizh">池中锦鲤摆尾，漾开圈圈涟漪，传说它们能为你带来好运。</span>
+      </div>
+      <div class="feature">
+        <span class="em">⛲</span>
+        <h4>Color Fountains<span class="bizh">炫彩喷泉</span></h4>
+        <p class="bien">Cylindrical fountains on both sides light up at dusk in shifting colors—a feast for the senses.</p>
+        <span class="bizh">东西两侧圆柱形喷泉，夜幕降临灯光迭起，五彩斑斓，沁入心间。</span>
+      </div>
+      <div class="feature">
+        <span class="em">🌸</span>
+        <h4>Year-round Beauty<span class="bizh">四季有景</span></h4>
+        <p class="bien">Crabapples in spring, lotus in summer—each season hides a different kind of tenderness.</p>
+        <span class="bizh">春日海棠、夏日莲荷，泮池的每一季都藏着不同的温柔。</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h2>The Name "Panchi"</h2>
+    <span class="bizh">"泮池"之名</span>
+    <p class="bien" style="text-align:center;margin-top:14px;">From Ancient Ritual to Modern Campus</p>
+    <span class="bizh" style="text-align:center;display:block;">从古代礼制到现代校园</span>
+  </div>
+  <div class="cards">
+    <div class="card" style="border-top-color:#0a4c8a;">
+      <h3>Origin<span class="bizh">溯源</span></h3>
+      <p class="bien">In ancient ritual, the emperor's school was Biyong (water on four sides); a vassal's school was Pangong (water on three sides, shaped like a half-disk). Later, Confucian temples and academies adopted semicircular pools—symbolizing <strong>boundless learning</strong>.</p>
+      <span class="bizh">古代礼制中，天子之学称"辟雍"，四面环水；诸侯之学称"泮宫"，东西南三面环水，形如半璧。后来孔庙、官学前多设半圆形泮池，寓意学无止境。</span>
+    </div>
+    <div class="card" style="border-top-color:#1d8fbe;">
+      <h3>Allusion<span class="bizh">典故</span></h3>
+      <p class="bien">The Book of Songs says: "Joyful by Panchi's waters, I gather celery." Ancient scholars would pick celery from the pool upon enrollment—hence "gathering celery" or "entering Pan" meant starting school. Panchi thus became a symbol of academia.</p>
+      <span class="bizh">《诗经》有云："思乐泮水，薄采其芹。"古时学宫有泮水，入学可采水中之芹为菜，故古人称入学为"采芹""入泮"，泮池也成了学府的象征。</span>
+    </div>
+    <div class="card" style="border-top-color:#c8a24a;">
+      <h3>Today<span class="bizh">今义</span></h3>
+      <p class="bien">Today's Panchi at XTBC carries on that tradition of revering learning. It is a scholarly sanctuary on campus—and a gentle footnote on every student's journey.</p>
+      <span class="bizh">今日的西工商泮池，延续着这份崇学尚文的传统。它是校园里的书香圣地，也是莘莘学子求学路上温柔的注脚。</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h2>Practical Info</h2>
+    <span class="bizh">实用信息</span>
+    <p class="bien" style="text-align:center;margin-top:14px;">How to Get Here</p>
+    <span class="bizh" style="text-align:center;display:block;">来校路线一览</span>
+  </div>
+  <table class="info-table">
+    <tbody><tr><th>Address<br><span class="bizh" style="font-weight:400;font-size:.8em;opacity:.8;">学校地址</span></th><td><span class="bien">No. 1235 Luxiang Rd., Gaoling Dist., Xi'an, Shaanxi</span><br><span class="bizh">陕西省西安市高陵区鹿祥路1235号</span></td></tr>
+    <tr><th>Main Gate<br><span class="bizh" style="font-weight:400;font-size:.8em;opacity:.8;">学校正门</span></th><td><span class="bien">Front of Panchi Square · Primary registration entrance</span><br><span class="bizh">泮池广场前，新生报到主大门</span></td></tr>
+    <tr><th>By Metro<br><span class="bizh" style="font-weight:400;font-size:.8em;opacity:.8;">地铁出行</span></th><td><span class="bien">Line 10 to Zhaohui Sq. Station (Exit A1), then walk</span><br><span class="bizh">地铁10号线至昭慧广场站（A1口）出站，步行入校</span></td></tr>
+    <tr><th>From Airport<br><span class="bizh" style="font-weight:400;font-size:.8em;opacity:.8;">机场来校</span></th><td><span class="bien">Line 14 → Xi'an Poly. Univ. · Wude Rd. → transfer to Line 10 → Zhaohui Sq.</span><br><span class="bizh">地铁14号线→西安工大·武德路站→换乘10号线→昭慧广场站</span></td></tr>
+    <tr><th>From North Station<br><span class="bizh" style="font-weight:400;font-size:.8em;opacity:.8;">北站来校</span></th><td><span class="bien">Same route: Line 14 → transfer Line 10 → Zhaohui Sq.</span><br><span class="bizh">地铁14号线→西安工大·武德路站→换乘10号线→昭慧广场站</span></td></tr>
+    <tr><th>From Gaoling Station<br><span class="bizh" style="font-weight:400;font-size:.8em;opacity:.8;">高陵站来校</span></th><td><span class="bien">Walk to Gaoling HSR bus stop, take Bus 208 to XTBC stop</span><br><span class="bizh">步行至高陵高铁站公交站，乘208路至工商学院站</span></td></tr>
+    <tr><th>Admission Hotline<br><span class="bizh" style="font-weight:400;font-size:.8em;opacity:.8;">招生热线</span></th><td><span class="bien">029-63609561 / 63609668 / 63609818</span><br><span class="bizh">029-63609561 / 63609668 / 63609818</span></td></tr>
+  </tbody></table>
+</section>
+
+<section>
+  <div class="closing">
+    <h3>Waters Reflect the Sound of Reading<span class="bizh" style="display:block;font-size:.65em;margin-top:8px;color:rgba(255,255,255,.8);">一池碧水映书声</span></h3>
+    <p class="bien" style="max-width:640px;margin:0 auto;color:rgba(255,255,255,.9);">Beyond the gate lies the wide world; within Panchi lives the original heart of learning. May every student who walks into Xi'an Technology and Business College meet a better version of themselves by these waters.</p>
+    <span class="bizh" style="display:block;max-width:640px;margin:10px auto 0;color:rgba(255,255,255,.75);">正门之外是广阔天地，泮池之内是求知初心。愿每一位走进西安工商学院的学子，都能在这方水域旁，遇见更好的自己。</span>
+  </div>
+</section>
+
+<footer>
+  <p>Xi'an Technology and Business College · Main Gate &amp; Panchi Pool<br>
+  <span style="opacity:.7;">西安工商学院 · 正门与泮池 &nbsp;|&nbsp; Compiled from official sources</span></p>
+</footer>
+
+
+
+</body></html>
